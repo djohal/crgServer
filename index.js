@@ -10,7 +10,7 @@ app.use(listingAPI);
 app.use(officeAPI)
 
 app.get('/', (req, res) => {
-	res.send('You are connected to the root level of the main server. You will need additional commands to gain access to Common Realty Groups Data. NOTE: This activity has been logged.')
+	res.send('You are connected to the root level of the main server @CommonRealtyGroup.')
 })
 app.listen(process.env.PORT || 3001, ()=> {
 	console.log(`Server is running on port ${process.env.PORT}`)
