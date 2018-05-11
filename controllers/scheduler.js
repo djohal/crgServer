@@ -21,6 +21,8 @@ const handleScheduler = (db) => {
             // filter data by cities
             const filteredData = body.hotPadsItems.Listing.map(data => {
                 if (data.city === 'Cambridge' || data.city === 'Somerville') {
+                    // replace yglmail to custom email
+                    data.contactEmail = "Leasing@CommonRealtyGroup.com";
                     return data;
                 }
             })
